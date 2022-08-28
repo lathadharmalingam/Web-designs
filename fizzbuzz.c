@@ -1,3 +1,6 @@
+//if the array element is multiples of ‘3’ print “Fizz” instead of the number 
+//and for the multiples of ‘5’ print “Buzz” and if the number is divisible by both '3' and '5' print "fizzbuzz".
+
 #include <stdio.h>
 
 int main()
