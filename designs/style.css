@@ -32,22 +32,28 @@ body
     25px 35px 20px rgba(0, 0, 0, 0.05),
     25px 30px 30px rgba(0, 0, 0, 0.05),
     inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    
     transition: 0.5s ease-in-out;
     
 }
 .container .drop:nth-child(1)
 {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% ;
+    color: rgba(116, 235, 146, 0.05);
 }
 .container .drop:nth-child(2)
 {
     border-radius: 30% 70% 54% 46% / 30% 33% 67% 70%  ;
 }
+
 .container .drop:nth-child(3)
 {
     border-radius: 55% 45% 67% 33% / 30% 33% 67% 70%  ;
 }
-
+.container .drop:nth-child(4)
+{
+    border-radius: 55% 45% 67% 33% / 30% 33% 67% 70%  ;
+}
 .container .drop:hover
 {
     border-radius: 50%;
