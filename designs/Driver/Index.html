@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="front"> <svg width="465" height="87">
+    <rect width="465" height="67" style="fill:#f0f8ff;stroke: width 1px;;stroke:rgb(2, 68, 12)" />
+  </svg></div>
+  <div class="enter">
+    <svg width="435" height="50">
+      <rect width="57" height="45" style="fill:#f0f8ff;stroke: width 1px;;stroke:rgb(2, 68, 12)" />
+    </svg>
+  </div>
+  <div class="exit">
+    <svg width="435" height="50">
+      <rect width="57" height="45" style="fill:#f0f8ff;stroke: width 1px;;stroke:rgb(2, 68, 12)" />
+    </svg>
+  </div>
+
+  <div class="busbody">
+    <svg width="200" height="450">
+      <rect width="130" height="450" style="fill:#0a7bde;stroke: width 1px;;stroke:rgb(2, 68, 12)" />
+    </svg>
+    <svg width="200" height="450">
+      <rect width="130" height="450" style="fill:#1a78cb;stroke: width 1px;;stroke:rgb(2, 68, 12)" />
+    </svg>
+  </div>
+  <div class="human"><svg height="30" width="40">
+      <circle cx="18" cy="18" r="10" stroke="black" stroke-width="1" fill="grey" />
+    </svg>
+    <div class="hb"><svg height="40" width="45">
+      <polygon points="5,5 45,5 25,35" style="fill:rgb(180, 186, 180);stroke:rgb(8, 8, 8);stroke-width:1 " />
+    </svg></div>
+  </div>
+  <div class="cir">
+    <button id="button" onclick="NextStop()">Next stop</button>
+    </svg>
+  </div>
+</body>
+<div class="container">
+  <div class="scroll" >
+    <div id="screen">Next Stop: <span id="nextStop">Tambaram to Adyar</span></div></div>
+     </div>
+     <script> 
+     stops = ["Tambaram west bus stand", "Poondi bazaar", "East Tambaram convent","Aaathi Nagar","RajaKilpakkam","Palavakkam","Thiruvanmiyur","Adyar Depot"];
+     function NextStop(){
+      const next=  displayNextStop();
+      document.getElementById("nextStop").innerHTML=next;
+     }
+  
+     var clickCount = 0;
+      function displayNextStop(){
+      if(clickCount ==stops.length){
+        clickCount =0;
+      }
+        const stop =( stops[clickCount]);
+        clickCount++;
+        return stop     
+      }
+
+</script>
+</html>

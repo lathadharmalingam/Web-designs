@@ -1,0 +1,58 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .front{
+   display: flex; 
+   justify-content: center;
+   color: #f0f8ff;
+   transform: translate(-98px, 4px);
+} 
+ .enter{
+    transform: translate(410px, 4px);
+   
+ }
+.exit{
+    justify-content: center;
+    transform: translate(410px, 420px);
+}
+.busbody{
+    justify-content: center;
+    transform: translate(480px, -28px);      
+}
+ .human{
+    justify-content: center;
+    transform: translate(760px, -550px);  
+}
+.hb{
+   
+    transform: translate(-8px, -10px);   
+}
+.cir{
+    justify-content: center;
+    transform: translate(650px, -600px);     
+} 
+.container {
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 30%;
+    transform: translate(432px, -730px);  
+  }
+  .scroll{
+    display: flex;
+    justify-content: center;
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        
+        -moz-animation: my-animation 10s linear infinite;
+        -webkit-animation: my-animation 10s linear infinite;
+        animation: my-animation 10s linear infinite;
+  }
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
